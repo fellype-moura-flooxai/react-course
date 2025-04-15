@@ -4,6 +4,7 @@ import React from 'react';
 
 import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
+import Fragmento from './components/basicos/Fragmento';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -13,6 +14,7 @@ root.render(
        <ComParametro
        titulo='Situação do Aluno'
        aluno='Pedro Silva' 
-       nota={9.3} /> 
+       nota={8.7} /> 
+       <Fragmento />
     </div>
   )
