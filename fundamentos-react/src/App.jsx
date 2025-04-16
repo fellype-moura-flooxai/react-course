@@ -7,19 +7,22 @@ import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 
 export default () => (
-  <div id="app">
+  <div id="App">
     <h1>fundamentos reacts </h1>
 
+    <div className="cards">
+
+    </div>
+
     <Card titulo="#4 - Desafio Aleatorio">
-    <Fragmento />
+    <Aleatorio min={1} max={60} />
       </Card>
 
     <Card titulo="#3 - Fragmento">
-    <Aleatorio/>
+    <Fragmento />
       </Card>
 
     <Card titulo="#2 - Com Parametro">
-    <Fragmento />
     <ComParametro 
     titulo="Situação do Aluno" 
     aluno="Pedro Silva" 
