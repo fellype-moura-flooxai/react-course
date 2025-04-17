@@ -3,6 +3,8 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
+import Input from "./components/formulario/Input"
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
@@ -15,11 +17,20 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 
+
 export default () => (
   <div className="App">
     <h1>fundamentos reacts </h1>
 
     <div className="Cards">
+      <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
+      <Input></Input>
+      </Card>
+
+      <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+      <IndiretaPai></IndiretaPai>
+      </Card>
+
       <Card titulo="#9 - Comunicação Direta" color="#59323c">
       <DiretaPai></DiretaPai>
       </Card>
