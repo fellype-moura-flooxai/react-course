@@ -3,6 +3,7 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
+import Contador from "./components/contador/Contador"
 import Input from "./components/formulario/Input"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import DiretaPai from "./components/comunicacao/DiretaPai";
@@ -23,6 +24,10 @@ export default () => (
     <h1>fundamentos reacts </h1>
 
     <div className="Cards">
+      <Card titulo="#12 - Contador" color="#424242">
+      <Contador numeroInicial={10}>  </Contador>
+      </Card>
+
       <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
       <Input></Input>
       </Card>
